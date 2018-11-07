@@ -1,5 +1,5 @@
 #!/bin/sh
-cd /root/.ssh
+cd ~/.ssh
 ssh -i id_rsa root@172.31.40.8 <<EOF
  cd ~/node-app
  git pull
