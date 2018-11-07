@@ -1,0 +1,9 @@
+#!/bin/sh
+cd /root/.ssh
+ssh -i id_rsa root@172.31.40.8 <<EOF
+ cd ~/node-app
+ git pull
+ npm install — production
+ pm2 restart all
+ exit
+EOF
