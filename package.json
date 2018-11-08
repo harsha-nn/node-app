@@ -6,6 +6,9 @@
    "dependencies": {
       "express": "^4.16.4"
    },
+   "scripts":{
+     "test" : "sh script/test"  
+   },
    "devDependencies": {
       "mocha": "^5.2.0",
       "supertest": "^3.3.0"
