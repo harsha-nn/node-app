@@ -1,6 +1,6 @@
 #!/bin/sh
 cd ~/.ssh
-ssh -i id_rsa ubuntu@172.31.40.8 1>&2 <<EOF
+ssh -i id_rsa ubuntu@172.31.40.8 &> /dev/null <<EOF
  cd ~/node-app
  git pull
  npm install production
