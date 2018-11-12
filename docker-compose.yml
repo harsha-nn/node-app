@@ -1,0 +1,10 @@
+version: '3.6'
+
+services: 
+  node-app-api:
+    container_name: backend
+    build: ./
+    command: npm start
+    working_dir: /usr/src/node-app
+    ports: 
+      - "3000:3000"
