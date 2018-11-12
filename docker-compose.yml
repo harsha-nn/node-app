@@ -4,7 +4,9 @@ services:
   node-app-api:
     container_name: backend
     build: ./
-    command: npm start
+    command: node index.js
     working_dir: /usr/src/node-app
     ports: 
       - "3000:3000"
+    volumes:
+      - ./:/usr/src/node-app
