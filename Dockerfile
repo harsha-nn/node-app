@@ -1,5 +1,6 @@
 FROM node:carbon
 
+
 WORKDIR /usr/src/node-app
 
 RUN git clone https://github.com/harsha-nn/node-app.git
@@ -8,3 +9,5 @@ RUN git clone https://github.com/harsha-nn/node-app.git
 RUN npm install
 
 CMD ["/bin/bash"]
+
+
