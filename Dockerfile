@@ -1,7 +1,7 @@
 FROM node:carbon
 
 
-WORKDIR /usr/src/node-app
+WORKDIR /usr/src/
 
 RUN git clone https://github.com/harsha-nn/node-app.git
 # COPY ./ ./
